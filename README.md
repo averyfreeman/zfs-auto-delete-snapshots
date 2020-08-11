@@ -53,10 +53,10 @@ All done!
 
 ```
 
-Notes about dependent snapshots and potential errors:
+A mention about dependent snapshots and potential errors when deleting them via this script:
 
--The '-R' flag will delete snapshots that other snapshots depend on - use with caution! I recommend only using it if you are comfortable potentially deleting all your system snapshots.
+- Dependent snapshots are usually automatically created by the system, e.g. by zsys / autozsys - does not typically apply to user folder(s)
 
--Sometimes you'll see a message like `could not find any snapshots to destroy; check snapshot names.` This means that the snapshot with that name was a dependent snapshot and has already been deleted.
+- The '-R' flag will delete snapshots that other snapshots depend on - use with caution! I recommend only using it if you are comfortable potentially deleting all your system snapshots, or are fairly certain about what you are doing.
 
-(dependent snapshots are usually automatically created by the system, e.g. by zsys / autozsys - does not typically apply to user folder(s))
+- Sometimes you'll see a message like `could not find any snapshots to destroy; check snapshot names.` This means that the snapshot with that name was a dependent snapshot and has already been deleted.
